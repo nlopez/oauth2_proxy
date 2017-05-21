@@ -1,5 +1,5 @@
 .PHONY: build clean
-IMG_NAME=a5huynh/oauth2_proxy
+IMG_NAME=thalweg/oauth2_proxy
 
 build:
 	docker build -t $(IMG_NAME) .

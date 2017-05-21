@@ -7,7 +7,7 @@ Check out the bitly github page for more details on the different command line
 options that can be passed in.
 
 This is also an automated
-[Docker Hub build](https://registry.hub.docker.com/u/a5huynh/google-auth-proxy/)
+[Docker Hub build](https://registry.hub.docker.com/u/nlopez/google-auth-proxy/)
 
 ### Quickstart with Docker Compose
 First, configure your client secret/id/cookie secret in the `docker-compose.yml` file
@@ -28,7 +28,7 @@ nginx container serving a simple HTML page.
 
 The following example assumes you have your upstream host located at `upstream:80`
 
-    docker run -P a5huynh/oauth2_proxy \
+    docker run -P nlopez/oauth2_proxy \
         --cookie-secure=false \
         --upstream="http://upstream:80" \
         --http-address="0.0.0.0:4180" \
@@ -58,4 +58,4 @@ environment variables using the following variables below:
     docker run -e OAUTH2_PROXY_COOKIE_SECRET=<cookie-secret> \
         -e OAUTH2_PROXY_CLIENT_ID=<client-id> \
         -e OAUTH2_PROXY_CLIENT_SECRET=<client-secret> \
-        a5huynh/oauth2_proxy
+        nlopez/oauth2_proxy
